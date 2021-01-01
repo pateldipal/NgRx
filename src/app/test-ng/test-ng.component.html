@@ -1,0 +1,13 @@
+<p>test-ng works!</p>
+
+<button (click)="getData()">Data</button>
+
+<button (click)="getSavedData()">Saved Data</button>
+
+{{ getName$ | async  }}
+
+<div *ngFor="let post of postData">
+  <div>
+    {{post.title}}
+  </div>
+</div>
